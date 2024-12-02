@@ -7,4 +7,4 @@ class Product(models.Model):
 	serial_number = models.UUIDField(default=uuid.uuid4, editable=False)
 	
 	def __str__(self):
-		return self.name + ' ' + self.serial_number
+		return self.name + ' ' + str(self.serial_number)
