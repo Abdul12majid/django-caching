@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 INTERNAL_IPS = [
     '127.0.0.1',
+    '102.89.69.91',
 ]
 
 # Application definition

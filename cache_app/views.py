@@ -18,6 +18,7 @@ class products(ListCreateAPIView):
 
 
 @cache_page(60*15)
+@api_view(["GET"])
 def cached(request):
 	all_produts = Product.objects.all()
 	serializer = ShowProduct(all_produts, many=True)
