@@ -47,7 +47,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.toolbar.middleware.DebugToolbarMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -112,7 +112,7 @@ CACHES = {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": config("REDIS_CONN"),
         "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DEFAULTClient"
+            "CLIENT_CLASS": "django_redis.client.DefaultClient"
         },
     }
 }

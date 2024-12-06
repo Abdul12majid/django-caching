@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializers import ShowProduct
 from rest_framework.generics import ListCreateAPIView
-from django.views.decorators.cache imort cache_page
+from django.views.decorators.cache import cache_page
 
 
 # Create your views here.
